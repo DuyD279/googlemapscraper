@@ -65,7 +65,7 @@ import xlsx from "xlsx";
                 document.querySelectorAll(".CsEnBe")[index].dataset.tooltip,
               i
             );
-            // Wait for 1 second before proceeding iteration
+            // wait 1 second 
             await page.waitForTimeout(1000);
             if (tooltip == "Copy address") {
               info["Address"] = innerText;
